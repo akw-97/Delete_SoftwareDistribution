@@ -14,7 +14,6 @@
 #     2. The script is designed to be run on Windows systems only.                                                              #
 #     3. The script requires PowerShell to be installed on the system.                                                          #
 #     4. Powershell 5.0 or higher.                                                                                              #
-#  Version 1.0.1 - 04/30/2025                                                                                                   #
 #  Log File Path: C:\Windows\config\logs\Delete.SoftwareDistribution.log                                                        #                                                                                                   #
 #                                                                                                                               #
 #                                                                                                                               #

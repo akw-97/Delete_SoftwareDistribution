@@ -52,17 +52,10 @@
 
 ######################################################################################################
 #      NOTES FOR ANSIBLE USAGE:                                                                      #
-# 1. Uses exit codes to indicate success or failure. Will need fail_when                             #
-#    Module needed to enssure exit codes are logged correctly in Ansible:                            #
-#                                                                                                    #
-#      # Execute the PowerShell script and account for exit codes                                    #
-#    - name: Execute the PowerShell script                                                           #
-#      win_shell: |                                                                                  #
-#        powershell.exe -ExecutionPolicy Bypass -File C:\Scripts\Delete.SoftwareDistribution.ps1     #
-#      register: script_result                                                                       #
-#      failed_when: script_result.rc != 0 ## ensures that the script's exit code is checked ##       #
-#                                                                                                    #
+# 1. Uses exit codes to indicate success or failure.                                                 #
+#    Module needed to enssure exit codes are logged correctly: fail_when                             #
 # 2. Requires administrative privileges to run.                                                      #
+# 3. User Confirmatuon will create indefinite hangs.                                                 #
 ######################################################################################################
 
 
